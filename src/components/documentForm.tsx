@@ -13,8 +13,6 @@ import {
 import Grid from '@mui/material/Grid';
 import { useEffect, useState } from 'react';
 import type { Documento } from '../types/Documents';
-import type { DocumentoTipo } from '../types/Documents';
-
 import { categoriasSubcategorias } from '../utils/categorias';
 import { v4 as uuidv4 } from 'uuid';
 
