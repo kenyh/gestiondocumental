@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# 📂 Gestión Documental – Prueba Técnica Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación web frontend que permite a un usuario gestionar un repositorio básico de documentos utilizando React, TypeScript, Material UI v5 y almacenamiento en Local Storage.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧠 Objetivo
 
-## Expanding the ESLint configuration
+- Crear, editar, eliminar y listar documentos.
+- Filtrar documentos por tipo, categoría y subcategoría.
+- Usar `LocalStorage` para persistencia.
+- Aplicar buenas prácticas con hooks personalizados, tipado estricto y componentes reutilizables.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 🛠️ Tecnologías Usadas
+
+- ⚛️ React + Vite
+- 🟦 TypeScript
+- 🎨 Material UI v5
+- 🧩 Hooks personalizados
+- 💾 LocalStorage
+
+---
+
+
+## 📦 Instalación
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/kenyh/gestiondocumental.git
+cd gestiondocumental
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+2. Instala dependencias:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+```bash
+npm install
+npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
 ```
+
+3. Ejecuta el servidor local:
+
+```bash
+npm run dev
+```
+
+4. Abre tu navegador en:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 📁 Estructura del Proyecto
+
+```
+src/
+├── components/         # Componentes reutilizables (tabla, modal, filtros)
+├── hooks/              # Lógica encapsulada (useDocuments)
+├── pages/              # Página principal
+├── types/              # Tipos TypeScript
+├── utils/              # Constantes y helpers
+└── App.tsx             # Componente principal
+```
+
+---
+
+## ✨ Funcionalidades
+
+- ✔️ Crear documentos desde un modal con validaciones
+- ✔️ Editar documentos existentes
+- ✔️ Eliminar con confirmación
+- ✔️ Filtros por tipo, categoría y subcategoría
+- ✔️ Paginación de resultados
+- ✔️ LocalStorage como sistema de persistencia
+- ✔️ Hooks personalizados y tipado fuerte
+
+---
+
+## 📌 Requisitos
+
+- Node.js 14+
+- npm 7+
+
+
+---
+
+## 📄 Autor y Créditos
+ kevin hernandez
