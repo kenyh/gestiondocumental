@@ -29,8 +29,8 @@ Aplicación web frontend que permite a un usuario gestionar un repositorio bási
 1. Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu-usuario/gestion-documental.git
-cd gestion-documental
+git clone https://github.com/kenyh/gestiondocumental.git
+cd gestiondocumental
 ```
 
 2. Instala dependencias:
